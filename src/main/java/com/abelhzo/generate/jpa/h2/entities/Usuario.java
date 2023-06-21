@@ -1,5 +1,5 @@
 package com.abelhzo.generate.jpa.h2.entities;
-// Generated 17 jun. 2023 01:56:49 by Hibernate Tools 6.2.4.Final
+// Generated 20 jun. 2023 22:18:56 by Hibernate Tools 6.2.4.Final
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;

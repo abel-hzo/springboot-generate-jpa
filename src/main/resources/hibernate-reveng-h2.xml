@@ -14,7 +14,13 @@
 	<table catalog="MYDATABASE" schema="PUBLIC" name="USUARIOS"
 		class="com.abelhzo.generate.jpa.h2.entities.Usuario" />
 	<table catalog="MYDATABASE" schema="PUBLIC" name="ROLES"
-		class="com.abelhzo.generate.jpa.h2.entities.Rol" />	
+		class="com.abelhzo.generate.jpa.h2.entities.Rol" >
+<!-- 		Para alcarar que constraint_name toma podemos consultar la tabla: -->
+<!-- 		SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE; -->
+		<foreign-key constraint-name="CONSTRAINT_292" >
+			<set exclude="true" />
+		</foreign-key>		
+	</table>
 	<table catalog="MYDATABASE" schema="PUBLIC" name="USUARIOSROLES"
 		class="com.abelhzo.generate.jpa.h2.entities.UsuarioRol" />
 			

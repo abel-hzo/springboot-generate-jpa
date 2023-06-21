@@ -70,10 +70,10 @@
 				<version>6.2.4.Final</version>
 
 				<configuration>
-					<!--propertyFile>${basedir}/src/main/resources/hibernate-h2.properties</propertyFile-->
-					<propertyFile>${basedir}/src/main/resources/hibernate-mysql.properties</propertyFile>
-					<!--revengFile>${basedir}/src/main/resources/hibernate-reveng-h2.xml</revengFile-->
-					<revengFile>${basedir}/src/main/resources/hibernate-reveng-mysql.xml</revengFile>
+					<propertyFile>${basedir}/src/main/resources/hibernate-h2.properties</propertyFile>
+					<!--propertyFile>${basedir}/src/main/resources/hibernate-mysql.properties</propertyFile-->
+					<revengFile>${basedir}/src/main/resources/hibernate-reveng-h2.xml</revengFile>
+					<!--revengFile>${basedir}/src/main/resources/hibernate-reveng-mysql.xml</revengFile-->
 					<outputDirectory>${basedir}/src/main/java</outputDirectory>
 					<!--packageName>com.abelhzo.generate.jpa.mysql.entities</packageName-->
 					<ejb3>true</ejb3>
