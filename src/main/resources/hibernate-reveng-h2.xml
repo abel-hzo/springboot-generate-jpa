@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering 
+        SYSTEM "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="BIGINT" hibernate-type="java.lang.Long" />
+		<sql-type jdbc-type="BLOB" hibernate-type="byte[]" />
+	</type-mapping>
+
+	<table-filter match-catalog="MYDATABASE"
+		match-schema="INFORMATION_SCHEMA" match-name=".*" exclude="true" />
+
+	<table catalog="MYDATABASE" schema="PUBLIC" name="USUARIOS"
+		class="com.abelhzo.generate.jpa.h2.entities.Usuario" />
+	<table catalog="MYDATABASE" schema="PUBLIC" name="ROLES"
+		class="com.abelhzo.generate.jpa.h2.entities.Rol" />	
+	<table catalog="MYDATABASE" schema="PUBLIC" name="USUARIOSROLES"
+		class="com.abelhzo.generate.jpa.h2.entities.UsuarioRol" />
+			
+</hibernate-reverse-engineering>
